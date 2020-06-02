@@ -8,10 +8,7 @@ public class OpenBrowser {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver","G:\\softwares\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		
 		driver.get("https://telugu.greatandhra.com");
-
-		
 		String dateTime = new Date().toString().replace(":", "_").replace(" ", "_");
 		String fileName = "Error At " + dateTime;
 		String newFile = ".//screenprints/" + fileName + ".jpg";
